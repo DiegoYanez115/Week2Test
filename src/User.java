@@ -46,6 +46,8 @@ public class User {
 
     private ArrayList<ToDoItem> toDoItems;
 
-
+    public void addToDoItem(ToDoItem item) {
+        toDoItems.add(item);
+    }
 
 }

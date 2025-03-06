@@ -50,7 +50,8 @@ public class Main {
         User user = authService.logIn(username, password);
         if (user != null) {
             System.out.println("Welcome, " + user.getUsername() + "!");
-            // TODO Later: Add the to-do list operations
+            ToDoList toDoList = new ToDoList(user);
+            toDoList.run();
         } else {
             System.out.println("Invalid username or password!");
         }
